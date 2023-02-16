@@ -132,7 +132,7 @@ void Array<T>::bad_range(const int index)
 template<class T>
 void Array<T>::bad_length(const int length)
 {
-    if(length < 1) throw MyException(" Invalid index");
+    if(length < 0) throw MyException(" Invalid index");
 }
 
 template<class T>
